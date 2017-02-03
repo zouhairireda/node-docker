@@ -8,7 +8,7 @@ Copy source inside the image (COPY . /usr/src/app) and then expose used port
 Finally, run the npm start command (CMD ["npm", "start"])
 
 ##Creating .dockerignore
-touch .dockerignore
+touch .dockerignore  
 Add node_modules to this file
 
 ##Building image
@@ -23,5 +23,6 @@ docker ps
 ##Print app output
 docker logs <container id>
 
-##If you need to go inside the container you can use the exec command:
+##Inside container
+If you need to go inside the container you can use the exec command:  
 docker exec -it <container id> /bin/bash
