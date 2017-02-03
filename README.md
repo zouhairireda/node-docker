@@ -1,6 +1,6 @@
 # Dockerizing fullstack js application
 
-Create Dockerfile file : touch Dockerfile
+Create Dockerfile file : touch Dockerfile\n
 Use official node image from Docker Hub
 Copy package.json inside the image (COPY package.json /usr/src/app) and install app dependencies using the npm binary (npm install)
 Copy source inside the image (COPY . /usr/src/app) and then expose used port
