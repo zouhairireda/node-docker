@@ -4,7 +4,7 @@ var querystring = require('querystring');
 var EventEmitter = require('events').EventEmitter;
 		var jeu = new EventEmitter();
 
-var utils = require('utils');
+//var utils = require('utils');
 
 var server = http.createServer(function(req, res) {
 	var params = querystring.parse(url.parse(req.url).query);
@@ -16,7 +16,7 @@ var server = http.createServer(function(req, res) {
 	jeu.emit('gameover', 'Game Over');
 
 	}
-	utils.sayHello();
+//	utils.sayHello();
 	res.end();
 });
 
